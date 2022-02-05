@@ -125,16 +125,16 @@ public class LinkedListDemo<T> {
     @Override
     public String toString() {
         String string = "";
-        if(isEmpty()) {
+        if (isEmpty()) {
             return "Empty List";
         } else {
-           Node<T> temp = head;
+            Node<T> temp = head;
             System.out.println("List: ");
-        while (temp != null) {
-            string += temp.t + "\n";
-            temp = temp.next;
+            while (temp != null) {
+                string += temp.t + "\n";
+                temp = temp.next;
+            }
+            return string;
         }
-        return string; 
-        }     
     }
 }
